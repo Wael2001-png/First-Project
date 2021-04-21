@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Bcolor: #252F31;
+    --color: white;
+    --B1color: #eee;
+    --Fcolor:#555;
+    --F2color:#888;
+    --Icolor:#30B576;
+}
+.container {
+    margin: 0 auto;
+    width: 75%;
+}
+.clear {
+    clear:both
+}
+header .solo {
+    background-image: url(../Images/PIA23689.jpg);
+    background-size: cover;
+    height: 975px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .solo div {
+    font-size: 42px;
+    font-family: serif;
+    font-weight: 700;
+    color: var(--color);
+    padding: 19px;
+    border-bottom: 4px solid var(--color);
+    border-top: 4px solid var(--color);
+    width: 550px;
+    text-align: center;
+    position: absolute;
+    top: 21%;
+}
+nav {
+    background-color: var(--Bcolor);
+    color: var(--color);
+    padding: 10px 0;
+}
+nav .container .icon {
+    float: left;
+    font-size: 32px;
+}
+nav .container .icon::first-letter {
+    color: var(--Icolor);
+}
+nav .container .link {
+    float: right;
+    margin-top: 0.7%;
+}
+nav .container .link div {
+    float: left;
+    margin-right: 30px;
+    font-size: 18px;
+}
+nav .container .link div a{
+    text-decoration: none;
+    color: var(--color);
+}
+nav .container .link div:first-child a,
+nav .container .link div a:hover{color: var(--Icolor)}
+/* Start Feat */
+.feat .grid {display: flex;}
+.feat .grid div:first-child,
+.feat .grid div:last-child {
+    width: 40%;
+    margin: 4%;
+    padding: 0 2% 0 0;
+}
+.feat .grid div:first-child {
+    justify-content: left;
+    margin-left: 3%;
+}
+.feat .grid div:last-child {
+    justify-content: end;
+}
+.feat .container div h2 {
+    text-transform: uppercase;
+    color: var(--Fcolor);
+    margin: 1% 0 5% 0;
+}
+.feat .container div p {
+    text-transform: capitalize;
+    font-size: 25px;
+    color: var(--F2color);
+    line-height: 1.3;
+    text-align: justify
+}
+/* End Feat */
+
+.HXH,
+.PB {
+    background-color: var(--B1color);
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+.HXH .container aside {
+    width: 50%;
+    height: 796px;
+    background-image: url(../Images/mmm.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left
+}
+.HXH .container article,
+.PB .container article {
+    padding: 1%;
+    float: right;
+    width: 47%;
+}
+.HXH .container article h4,
+.PB .container article h4 {
+    margin: 6% 0;
+    font-size: 25px
+}
+.HXH .container article p,
+.PB .container article p {
+    margin-bottom: 7%;
+    font-size: larger;
+    color: var(--Fcolor)
+}
+.HXH .container article ul li,
+.PB .container article ul li {
+    list-style: none;
+    float: left;
+    width: fit-content;
+    margin-bottom: 5%;
+}
+.HXH .container article ul li .img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-image: url(../Images/Killua.jpg);
+    background-size: contain;
+    margin-right: 8%;
+    border-radius: 50%;
+}
+.HXH .container article ul li .img2,
+.PB .container article ul li .img2 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    margin-right: 8%;
+    border-radius: 50%;
+}
+.HXH .container article ul li .img2 {
+    background-image: url(../Images/Nitro.jpg);
+}
+
+.AOT,
+.GOT {
+        overflow: hidden;
+        margin-bottom: 3%;
+}
+.AOT .container article,
+.GOT .container article {
+    padding: 1%;
+    float: left;
+    width: 47%;
+}
+.AOT .container article h4,
+.GOT .container article h4 {
+    margin: 6% 0;
+    font-size: 25px
+}
+.AOT .container article p,
+.GOT .container article p {
+    margin-bottom: 7%;
+    font-size: larger;
+    color: var(--Fcolor)
+}
+.AOT .container article ul li,
+.GOT .container article ul li {
+    list-style: none;
+    float: left;
+    width: fit-content;
+    margin-bottom: 5%;
+}
+.AOT .container article ul li .img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-image: url(../Images/Mikasa.jpg);
+    background-size: cover;
+    margin-right: 8%;
+    border-radius: 50%;
+}
+.AOT .container article ul li .img2,
+.GOT .container article ul li .img2 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 8%;
+    border-radius: 50%;
+}
+.AOT .container article ul li .img2 {
+    background-image: url(../Images/Levi.jpg);
+}
+.AOT .container aside {
+    width: 46%;
+    height: 796px;
+    background-image: url(../Images/Eren2.jpg);
+    background-size: cover;
+    float: right;
+}
+
+.PB .container aside {
+    width: 50%;
+    height: 796px;
+    background-image: url(../Images/Thomas.jpg);
+    background-size: cover;
+    float: left
+}
+.PB .container article ul li .img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-image: url(../Images/Arthur.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 8%;
+    border-radius: 50%;
+}
+.PB .container article ul li .img2 {
+    background-image: url(../Images/John.png);
+}
+
+.GOT .container article ul li .img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-image: url(../Images/Jon.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 8%;
+    border-radius: 50%;
+}
+.GOT .container article ul li .img2 {
+    background-image: url(../Images/Arya.jpg);
+}
+.GOT .container aside {
+    width: 46%;
+    height: 796px;
+    background-image: url(../Images/GOT.jpg);
+    background-size: cover;
+    background-position: center;
+    float: right;
+}
+.adr {
+    background-color: var(--Bcolor);
+    color: var(--color)
+}
+.adr .container .Me {
+    float: left;
+    width: 51%;
+    padding: 1%;
+    position: relative;    
+}
+.adr .container .Me h3 {
+    margin: 4% 0;
+    font-size: x-large;
+}
+.adr .container .Me p {
+    margin: 4% 0;
+    color: var(--F2color);
+    line-height: 1.5;
+    font-size: large;
+}
+.adr .container .Me ul {
+    margin: 5% 0;
+}
+.adr .container .Me ul li {
+    color: var(--F2color);
+    list-style: none;
+    font-size: larger;
+    margin: 2% 0;
+}
+.adr .container .Me h4 {
+    float: left;
+}
+.adr .container .Me div {
+    color: var(--F2color);
+    margin: 2% 0;
+}
+.adr .container .Me div h4 {
+    color: var(--color);
+    margin-right: 1%;
+    font-size: larger;
+}
+.adr .container form {
+    float: right;
+    width: 43%;
+}
+.adr .container form div {
+    margin: 3% 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.adr .container form div label {
+    display: block;
+}
+.adr .container form div input {
+    width: 100%;
+    height: 30px;
+    margin: 2% 0 5%;
+    padding: 10px;
+    background-color: #4b5557;
+    color: var(--color);
+}
+.adr .container form div textarea {
+    width: 100%;
+    margin: 2% 0 5%;
+    background-color: #4b5557;
+}
+.adr .container form div input[type="submit"],
+.adr .container form div input[type="reset"] {
+    width: 40%;
+    background-color: #191E22;
+    color: var(--color);
+    border: 2px solid var(--color);
+    cursor: pointer;
+    padding: 0;
+}
+.adr .container form div input[type="submit"] {
+    float: left;
+}
+.adr .container form div input[type="reset"] {
+    float: right;
+}
